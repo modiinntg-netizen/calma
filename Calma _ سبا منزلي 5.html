@@ -1,0 +1,153 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" id="tc" content="#ffffff"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><title>Calma | سبا منزلي</title>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f8fbfa;--cd:#fff;--ink:#14302a;--mu:#52675f;--sg:#1f4a3f;--sg2:#163a31;--lv:#c9bde6;--ln:#e4ece8;--on:#fff;--mint:#e3f1ea;--g1:#d6ece2;--g2:#cfc3ec;--ft:#173a31;--ftx:#cfe3da;--sh:0 8px 28px rgba(31,74,63,.09);--hg:linear-gradient(180deg,#eaf6f0,#f8fbfa)}
+:root[data-theme="pink"]{--bg:#fff6f9;--cd:#fff;--ink:#4a2a38;--mu:#876474;--sg:#b8466f;--sg2:#8f3556;--lv:#f4c3d5;--ln:#f6dbe5;--on:#fff;--mint:#fde8f0;--g1:#ffe0ea;--g2:#f1d3ee;--ft:#8f3556;--ftx:#ffe6ef;--sh:0 8px 28px rgba(184,70,111,.13);--hg:linear-gradient(180deg,#ffe8f0,#fff6f9)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]):not([data-theme="pink"]){--bg:#121c19;--cd:#1a2824;--ink:#e9f1ed;--mu:#9db2aa;--sg:#7fb39d;--sg2:#a6d0bd;--lv:#6f6aa3;--ln:#2a3b35;--on:#0f1a16;--mint:#24372f;--g1:#24413a;--g2:#352f58;--ft:#0d1512;--ftx:#9db2aa;--sh:0 8px 28px rgba(0,0,0,.35);--hg:linear-gradient(180deg,#17251f,#121c19)}}
+:root[data-theme="dark"]{--bg:#121c19;--cd:#1a2824;--ink:#e9f1ed;--mu:#9db2aa;--sg:#7fb39d;--sg2:#a6d0bd;--lv:#6f6aa3;--ln:#2a3b35;--on:#0f1a16;--mint:#24372f;--g1:#24413a;--g2:#352f58;--ft:#0d1512;--ftx:#9db2aa;--sh:0 8px 28px rgba(0,0,0,.35);--hg:linear-gradient(180deg,#17251f,#121c19)}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*:before,*:after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.8 "Readex Pro",Tahoma,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--cd);z-index:30}
+h1,h2,h3{font-weight:600;line-height:1.4;margin:0 0 .5em}h1{font-size:clamp(30px,6vw,52px);font-weight:300}h2{font-size:26px}h3{font-size:18px}
+a{color:inherit;text-decoration:none}p{margin:0 0 1em;color:var(--mu)}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--cd);border-bottom:1px solid var(--ln);z-index:31}
+.hd{max-width:1100px;margin:auto;padding:8px 16px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.lg{font-size:24px;font-weight:500;letter-spacing:.08em;color:var(--sg);display:flex;align-items:center;gap:8px;margin-inline-end:auto}
+nav{display:flex;gap:4px;order:3;width:100%;overflow-x:auto}
+nav a{padding:4px 12px;border-radius:99px;white-space:nowrap;font-size:14px;color:var(--mu)}nav a:hover,nav a.on{background:var(--mint);color:var(--ink)}
+#q{border:1px solid var(--ln);background:var(--bg);color:var(--ink);border-radius:99px;padding:6px 14px;font:inherit;font-size:14px;width:170px}
+.b,.b2{display:inline-block;border:1px solid var(--sg);background:var(--sg);color:var(--on);border-radius:99px;padding:8px 22px;font:500 15px "Readex Pro",sans-serif;cursor:pointer}
+.b2{background:none;color:var(--sg2)}.b:hover{background:var(--sg2)}.b2:hover{background:var(--bg)}.sm{padding:4px 14px;font-size:13px}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:2px solid var(--lv);outline-offset:2px}
+.w{max-width:1100px;margin:auto;padding:44px 16px}
+.hero{max-width:1100px;margin:auto;padding:56px 16px;display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center}
+.br{display:grid;place-items:center;aspect-ratio:1;max-width:340px;margin:auto;position:relative}
+.br i{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--lv),var(--g1));opacity:1;animation:bx 8s ease-in-out infinite}
+.br i+i{inset:14%;animation-delay:-.4s;background:radial-gradient(circle at 35% 30%,var(--g1),var(--g2))}
+.br b{position:relative;font-weight:400;font-size:26px;color:var(--ink)}
+.br small{position:absolute;bottom:-26px;color:var(--mu)}
+@keyframes bx{0%,100%{transform:scale(.72)}50%{transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){.br i{animation:none}html{scroll-behavior:auto}}
+.gr{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.cd{background:var(--cd);border:1px solid var(--ln);border-radius:18px;padding:20px}
+.st{border-inline-start:3px solid var(--lv);padding:4px 14px;background:none}
+.ic{line-height:1}.ico{width:58px;height:58px;display:block}.pr{font-weight:600;color:var(--sg2)}.old{text-decoration:line-through;color:var(--mu);font-size:13px;margin-inline-start:6px}
+.ch{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}.ch button{border:1px solid var(--ln);background:var(--cd);color:var(--ink);border-radius:99px;padding:4px 16px;font:inherit;font-size:14px;cursor:pointer}.ch button.on{background:var(--sg);color:var(--on);border-color:var(--sg)}
+.g2{display:grid;grid-template-columns:1.5fr 1fr;gap:20px;align-items:start}
+label{display:block;margin-bottom:12px;font-size:14px;color:var(--mu)}
+input,select,textarea{width:100%;border:1px solid var(--ln);background:var(--bg);color:var(--ink);border-radius:12px;padding:9px 12px;font:inherit;margin-top:4px}
+.ck{display:flex;gap:8px;align-items:center;color:var(--ink)}.ck input{width:auto;margin:0}
+.tot{font-size:30px;font-weight:600;color:var(--sg2)}
+details{background:var(--cd);border:1px solid var(--ln);border-radius:14px;padding:12px 16px;margin-bottom:10px}summary{cursor:pointer;font-weight:500}
+.gc{background:linear-gradient(135deg,var(--g1),var(--g2));color:var(--ink);border-radius:20px;padding:26px;min-height:190px;display:flex;flex-direction:column;justify-content:space-between}.gc p{color:var(--ink);margin:0}
+.star{color:#c79a3e;letter-spacing:2px}
+footer{background:var(--ft);padding:26px 16px;text-align:center;font-size:13px;color:var(--ftx)}
+#bt{position:fixed;inset-inline-start:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:56px;height:56px;border-radius:50%;border:0;background:var(--sg);color:var(--on);font-size:24px;cursor:pointer;z-index:40}
+#ch{position:fixed;inset-inline-start:16px;bottom:calc(82px + env(safe-area-inset-bottom,0px));width:min(350px,calc(100vw - 32px));height:min(460px,60vh);background:var(--cd);border:1px solid var(--ln);border-radius:20px;display:none;flex-direction:column;z-index:40;overflow:hidden}#ch.on{display:flex}
+#ms{flex:1;overflow:auto;padding:12px;display:flex;flex-direction:column;gap:8px}
+.m{padding:8px 12px;border-radius:14px;max-width:88%;font-size:14px;line-height:1.7}.m.u{background:var(--sg);color:var(--on);align-self:flex-start}.m.a{background:var(--bg);align-self:flex-end}
+.qk{display:flex;gap:6px;flex-wrap:wrap;padding:0 12px 8px}.qk button{border:1px solid var(--ln);background:none;color:var(--ink);border-radius:99px;padding:2px 12px;font:inherit;font-size:13px;cursor:pointer}
+#ch form{display:flex;gap:6px;padding:8px;border-top:1px solid var(--ln)}#ch input{margin:0}
+dialog{border:1px solid var(--ln);border-radius:20px;background:var(--cd);color:var(--ink);max-width:380px;width:92%;padding:22px}dialog::backdrop{background:#0008}
+#ts{position:fixed;bottom:calc(20px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 20px;border-radius:99px;font-size:14px;opacity:0;transition:.3s;z-index:60;pointer-events:none}#ts.on{opacity:1}
+@media(max-width:760px){.hero,.g2{grid-template-columns:1fr}.br{max-width:240px}#q{flex:1;width:auto}}
+html{-webkit-text-size-adjust:100%}body{-webkit-tap-highlight-color:transparent;overflow-x:hidden;transition:background .4s,color .4s}
+header{box-shadow:0 2px 14px rgba(0,0,0,.05)}.lg{font-family:"Cormorant Garamond","Readex Pro",serif;font-size:32px;font-weight:600}
+#q{font-size:16px}.b,.b2,.ch button,nav a{min-height:40px;display:inline-flex;align-items:center;justify-content:center}
+.th{display:flex;gap:2px;padding:3px;background:var(--mint);border-radius:99px}
+.th button{border:0;background:none;color:var(--mu);font:500 12px "Readex Pro",sans-serif;padding:5px 12px;min-height:32px;border-radius:99px;cursor:pointer}
+.th button.on{background:var(--cd);color:var(--sg2);box-shadow:0 1px 6px rgba(0,0,0,.14)}
+.hero{width:min(1100px,calc(100% - 24px));max-width:none;margin:16px auto 0;padding:52px 28px;border-radius:32px;background:var(--hg);border:1px solid var(--ln)}
+h2{position:relative;padding-bottom:12px;margin-bottom:22px}h2:after{content:"";position:absolute;inset-inline-start:0;bottom:0;width:46px;height:3px;border-radius:3px;background:var(--lv)}
+.cd{box-shadow:var(--sh);transition:transform .25s,box-shadow .25s}.gc{box-shadow:var(--sh)}
+.b{box-shadow:0 6px 16px rgba(0,0,0,.13);transition:transform .2s,background .2s}.b:active{transform:scale(.97)}
+@media(hover:hover){.gr>.cd:hover{transform:translateY(-3px)}}
+#app{animation:fi .5s ease}@keyframes fi{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){#app{animation:none}.cd,.b{transition:none}}
+@media(max-width:760px){.hero{padding:34px 18px;border-radius:26px}.th button{padding:5px 10px}.lg{font-size:28px}}
+</style></head><body>
+<header><div class="hd"><a class="lg" href="#home"><svg width="36" height="36" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="13" r="7" fill="var(--lv)"/><path d="M4 22c4-3 8-3 13 0s9 3 13 0M7 28c3-2 6-2 10 0s7 2 10 0" fill="none" stroke="var(--sg)" stroke-width="2" stroke-linecap="round"/></svg>calma</a>
+<input id="q" type="search" placeholder="ابحثي عن خدمة…" aria-label="بحث" oninput="Q(this.value)"><div class="th" role="group" aria-label="لون الموقع"><button data-t="light" onclick="setT('light')">فاتح</button><button data-t="pink" onclick="setT('pink')">وردي</button><button data-t="dark" onclick="setT('dark')">غامق</button></div><button class="b2 sm" id="ab" onclick="acc()">دخول</button><a class="b sm" href="#book">احجزي</a>
+<nav><a href="#home">الرئيسية</a><a href="#services">الخدمات</a><a href="#" onclick="cat='pk';go('services');return false">الباقات</a><a href="#gift">بطاقات الإهداء</a><a href="#about">من نحن</a><a href="#faq">الأسئلة الشائعة</a><a href="#contact">تواصل معنا</a></nav></div></header>
+<main id="app"></main>
+<footer>الدفع عبر مدى وApple Pay وSTC Pay · بياناتك محمية وفق نظام حماية البيانات الشخصية · مشروع دراسي: الأسعار والآراء تجريبية<br>© 2026 Calma</footer>
+<button id="bt" aria-label="مستشار العناية" onclick="tg()"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h18v11H11l-5 4v-4H4z"/><path d="M9 11h8"/></svg></button>
+<div id="ch"><div class="m a" style="margin:12px 12px 0;font-weight:500">مستشار Calma الذكي</div><div id="ms"></div><div class="qk"><button onclick="ask('أشعر بإجهاد وتعب')">إجهاد</button><button onclick="ask('بشرتي جافة')">بشرة جافة</button><button onclick="ask('عندي مناسبة قريبة')">مناسبة قريبة</button><button onclick="ask('أريد هدية')">هدية</button></div><form onsubmit="return send()"><input id="ci" placeholder="اكتبي سؤالك…" autocomplete="off"><button class="b sm">إرسال</button></form></div>
+<dialog id="au"><form method="dialog" onsubmit="return false"><h3 id="at">تسجيل الدخول</h3><label id="an" hidden>الاسم<input id="nm"></label><label>البريد الإلكتروني<input id="em" type="email"></label><label>كلمة المرور<input id="pw" type="password"></label><button class="b" onclick="auth()">متابعة</button> <button class="b2" onclick="sw()" id="sb">إنشاء حساب جديد</button> <button class="b2" onclick="au.close()">إغلاق</button><p style="font-size:12px;margin:10px 0 0">نسخة تجريبية: لا تُحفظ كلمة المرور ولا تُرسل لأي خادم.</p></form></dialog>
+<div id="ts"></div>
+<script>
+const $=s=>document.querySelector(s),H=a=>a.join(''),st=n=>'★'.repeat(n)+'☆'.repeat(5-n);
+const L=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))||d}catch(e){return d}},W=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+const C={all:'الكل',ms:'المساج',sk:'البشرة',nl:'الأظافر',pk:'الباقات'},TM=['10:00 ص','12:00 م','2:00 م','4:00 م','6:00 م','8:00 م'];
+const S=[
+{i:1,c:'ms',e:'🌿',n:'مساج استرخائي',m:60,p:250,d:'حركات انسيابية هادئة تخفف التوتر وتهدئ الجسم.'},
+{i:2,c:'ms',e:'💆',n:'مساج علاجي',m:60,p:300,d:'يستهدف الظهر والرقبة والكتفين لتخفيف الشد العضلي.'},
+{i:3,c:'ms',e:'🪨',n:'مساج الأحجار الساخنة',m:75,p:350,d:'أحجار بازلتية دافئة تمنحك استرخاءً عميقاً.'},
+{i:4,c:'ms',e:'🎋',n:'مساج الأخشاب',m:60,p:320,d:'أدوات خشبية تنشط الدورة الدموية وتشد الجسم.'},
+{i:5,c:'sk',e:'✨',n:'تنظيف بشرة عميق',m:60,p:280,d:'تنظيف المسام وإزالة الشوائب بمنتجات لطيفة.'},
+{i:6,c:'sk',e:'🌸',n:'جلسة نضارة',m:45,p:230,d:'إشراقة فورية للبشرة المتعبة.'},
+{i:7,c:'sk',e:'💧',n:'ترطيب مكثف',m:45,p:220,d:'علاج للبشرة الجافة بسيروم وماسك مرطب.'},
+{i:8,c:'nl',e:'💅',n:'منيكير متكامل',m:45,p:120,d:'عناية كاملة باليدين مع طلاء من اختيارك.'},
+{i:9,c:'nl',e:'🦶',n:'بديكير متكامل',m:60,p:150,d:'تنعيم القدمين وعناية كاملة بالأظافر.'},
+{i:10,c:'pk',e:'🕊️',n:'باقة الاسترخاء',m:120,p:450,o:550,d:'مساج استرخائي + ترطيب مكثف.'},
+{i:11,c:'pk',e:'👰',n:'باقة العروس',m:210,p:680,o:850,d:'تنظيف عميق + نضارة + منيكير وبديكير.'},
+{i:12,c:'pk',e:'🌙',n:'الباقة الكاملة',m:240,p:820,o:1020,d:'أحجار ساخنة + نضارة + يدان وقدمان.'}];
+const A=[['oil','زيوت عطرية خاصة',40],['mask','ماسك ترطيب إضافي',35],['cnd','شموع وموسيقى هادئة',25]];
+const R0=[{n:'ريم',s:5,t:'وصلت الأخصائية في الموعد وكانت الأدوات معقمة أمامي. أفضل تجربة استرخاء.'},{n:'نورة',s:5,t:'باقة العروس وفرت علي يوماً كاملاً في الصالون.'},{n:'لمى',s:4,t:'الحجز سهل وسريع، والمساعد الذكي رشح لي الخدمة المناسبة.'}];
+let cat='all',qs='',sel=1,user=L('cu',null);
+const sv=id=>S.find(s=>s.i==id);
+const P={1:'<path d="M24 14c4 4 5 9 0 15c-5-6-4-11 0-15z"/><path d="M24 29c-6 0-10-3-12-8c5 0 9 2 12 8z"/><path d="M24 29c6 0 10-3 12-8c-5 0-9 2-12 8z"/><path d="M14 33h20"/>',2:'<circle cx="24" cy="14" r="2.5"/><circle cx="24" cy="22" r="2.5"/><circle cx="24" cy="30" r="2.5"/><path d="M15 18c3 2 3 6 0 8M33 18c-3 2-3 6 0 8M15 28c3 2 3 5 0 7M33 28c-3 2-3 5 0 7"/>',3:'<ellipse cx="24" cy="32" rx="11" ry="5"/><ellipse cx="24" cy="24" rx="8" ry="4"/><ellipse cx="24" cy="17.5" rx="5" ry="3"/><path d="M20 7c-1 2 1 2 0 4M28 7c-1 2 1 2 0 4"/>',4:'<path d="M20 10v28M28 14v24"/><path d="M16 18h8M16 28h8M24 22h8M24 32h8"/><path d="M28 14c4-1 6-3 7-6"/>',5:'<path d="M24 12c1 6 3 8 9 9c-6 1-8 3-9 9c-1-6-3-8-9-9c6-1 8-3 9-9z"/><path d="M34 32v6M31 35h6"/>',6:'<circle cx="24" cy="24" r="6"/><path d="M24 11v4M24 33v4M11 24h4M33 24h4M15 15l3 3M30 30l3 3M33 15l-3 3M18 30l-3 3"/>',7:'<path d="M24 11c6 8 9 12 9 17a9 9 0 0 1-18 0c0-5 3-9 9-17z"/><path d="M19 29a5 5 0 0 0 4 5"/>',8:'<rect x="18" y="26" width="12" height="12" rx="3"/><path d="M21 26v-5h6v5M22 21v-8h4v8"/>',9:'<path d="M12 26h24c0 7-5 11-12 11s-12-4-12-11z"/><path d="M18 21c2-2 2-4 0-6M26 21c2-2 2-4 0-6"/>',10:'<circle cx="20" cy="24" r="8"/><circle cx="28" cy="24" r="8"/>',11:'<circle cx="24" cy="29" r="9"/><path d="M20 15l4-5 4 5-4 4z"/>',12:'<path d="M32 14a12 12 0 1 0 0 20a9.5 9.5 0 0 1 0-20z"/><path d="M36 24l1 2.5 2.5 1-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1z"/>'};
+const I=k=>`<svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="var(--mint)"/><circle cx="37" cy="11" r="4" fill="var(--lv)"/><g fill="none" stroke="var(--sg)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${P[k]}</g></svg>`;
+function go(r){location.hash==='#'+r?render():location.hash=r}
+function Q(v){qs=v.trim();cat='all';go('services')}
+function toast(t){const e=$('#ts');e.textContent=t;e.classList.add('on');setTimeout(()=>e.classList.remove('on'),2600)}
+function card(s){return`<div class="cd"><div class="ic">${I(s.i)}</div><h3>${s.n}</h3><p>${s.d}<br>${s.m} دقيقة</p><div class="pr">${s.p} ر.س${s.o?`<span class="old">${s.o}</span>`:''}</div><button class="b sm" style="margin-top:10px" onclick="book(${s.i})">احجزي</button></div>`}
+function book(i){sel=i;go('book')}
+const V={};
+V.home=()=>{const R=[...L('rv',[]),...R0],av=(R.reduce((a,r)=>a+r.s,0)/R.length).toFixed(1);return`
+<section class="hero"><div><h1>Calma، لأنكِ تستحقين لحظة هدوء في بيتك</h1><p>مساج وعناية بالبشرة ومنيكير وبديكير في بيتك، مع أخصائية معتمدة وأدوات معقمة لكل جلسة.</p><a class="b" href="#book">احجزي جلستك</a> <a class="b2" href="#services">تصفحي الخدمات</a></div><div class="br" aria-hidden="true"><i></i><i></i><b id="bc">شهيق</b><small>تنفسي معنا</small></div></section>
+<section class="w"><h2>كيف تعمل Calma</h2><div class="gr">${H([['١','اختاري الخدمة أو اسألي المستشار'],['٢','حددي الموعد وعنوان المنزل'],['٣','ادفعي إلكترونياً بأمان'],['٤','استرخي، وتصلك الأخصائية']].map(x=>`<div class="cd"><div class="pr" style="font-size:28px">${x[0]}</div><p style="margin:0;color:var(--ink)">${x[1]}</p></div>`))}</div></section>
+<section class="w" style="padding-top:0"><h2>أقسامنا</h2><div class="gr">${H([['ms',1,'المساج والاسترخاء'],['sk',5,'العناية بالبشرة'],['nl',8,'البديكير والمنيكير'],['pk',10,'الباقات بسعر مخفض']].map(x=>`<a class="cd" href="#" onclick="cat='${x[0]}';go('services');return false"><div class="ic">${I(x[1])}</div><h3 style="margin:8px 0 0">${x[2]}</h3></a>`))}</div></section>
+<section class="w" style="padding-top:0"><h2>التعقيم والسلامة</h2><div class="gr">${H(['أدوات معقمة بالأوتوكلاف قبل كل جلسة','مستلزمات ذات استخدام واحد','أخصائيات معتمدات وموثقات الهوية','مشاركة بيانات الأخصائية قبل الموعد'].map(t=>`<div class="cd st"><p style="margin:0;color:var(--ink)">${t}</p></div>`))}</div></section>
+<section class="w" style="padding-top:0"><h2>آراء العميلات <span class="star">${st(Math.round(av))}</span> <small style="color:var(--mu)">${av} من 5</small></h2><div class="gr">${H(R.slice(0,6).map(r=>`<div class="cd"><div class="star">${st(r.s)}</div><p>${r.t}</p><b>${r.n}</b></div>`))}</div>
+<div class="cd" style="margin-top:16px;max-width:520px"><h3>شاركينا رأيك</h3><label>الاسم<input id="rn"></label><label>التقييم<select id="rs"><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></label><label>رأيك<textarea id="rt" rows="2"></textarea></label><button class="b sm" onclick="addR()">إرسال التقييم</button></div></section>`};
+function addR(){const n=$('#rn').value.trim(),t=$('#rt').value.trim();if(!n||!t)return toast('اكتبي اسمك ورأيك');W('rv',[{n,s:+$('#rs').value,t},...L('rv',[])]);toast('شكراً لرأيك');render()}
+V.services=()=>{const f=S.filter(s=>(cat=='all'||s.c==cat)&&(s.n+s.d).includes(qs));return`<section class="w"><h2>الخدمات</h2><div class="ch">${H(Object.keys(C).map(k=>`<button class="${k==cat?'on':''}" onclick="cat='${k}';render()">${C[k]}</button>`))}</div>${qs?`<p>نتائج البحث عن «${qs.replace(/</g,'')}»</p>`:''}<div class="gr">${f.length?H(f.map(card)):'<p>لا توجد نتائج. جربي كلمة أخرى مثل «مساج» أو «بشرة».</p>'}</div></section>`};
+V.book=()=>`<section class="w"><h2>احجزي جلستك</h2><div class="g2"><div class="cd"><label>الخدمة<select id="bs" onchange="sel=+this.value;calc()">${H(S.map(s=>`<option value="${s.i}" ${s.i==sel?'selected':''}>${s.n} — ${s.p} ر.س</option>`))}</select></label>
+<label>التاريخ<input type="date" id="bd" min="${new Date().toISOString().slice(0,10)}"></label><label>الوقت<select id="bt2">${H(TM.map(t=>`<option>${t}</option>`))}</select></label>
+<label>عنوان المنزل (الحي والشارع ورقم المنزل)<textarea id="ba" rows="2"></textarea></label><label>رقم الجوال<input id="bp" type="tel" placeholder="05xxxxxxxx"></label>
+<h3>أضيفي لمسة خاصة</h3>${H(A.map(a=>`<label class="ck"><input type="checkbox" class="ad" value="${a[2]}" onchange="calc()">${a[1]} (+${a[2]} ر.س)</label>`))}
+<label style="margin-top:12px">كود الخصم<input id="bc2" placeholder="جربي CALMA10" oninput="calc()"></label>
+<h3>طريقة الدفع</h3>${H(['مدى / بطاقة ائتمانية','Apple Pay','STC Pay','الدفع بعد الجلسة'].map((p,i)=>`<label class="ck"><input type="radio" name="pm" ${i?'':'checked'}>${p}</label>`))}</div>
+<div class="cd" style="position:sticky;top:120px"><h3>ملخص الحجز</h3><p id="sm"></p><div class="tot" id="tot"></div><button class="b" style="width:100%;margin-top:12px" id="pb" onclick="pay()">ادفعي وأكدي الحجز</button><p style="font-size:12px;margin:10px 0 0">الدفع هنا محاكاة تعليمية، ولا يُطلب أي رقم بطاقة.</p></div></div></section>`;
+function calc(){const s=sv($('#bs').value);let t=s.p+[...document.querySelectorAll('.ad:checked')].reduce((a,x)=>a+ +x.value,0);const ok=$('#bc2').value.trim().toUpperCase()=='CALMA10';if(ok)t=Math.round(t*.9);$('#sm').textContent=s.n+' · '+s.m+' دقيقة'+(ok?' · خصم 10%':'');$('#tot').textContent=t+' ر.س';return t}
+function pay(){const d=$('#bd').value,a=$('#ba').value.trim(),p=$('#bp').value.trim();if(!d||!a||!/^\d{9,10}$/.test(p))return toast('أكملي التاريخ والعنوان ورقم جوال صحيح');if(!user){toast('سجلي دخولك لإكمال الحجز');return acc()}
+const b=$('#pb');b.textContent='جارٍ معالجة الدفع…';b.disabled=true;const x={id:'CL-'+Math.floor(1000+Math.random()*9000),n:sv($('#bs').value).n,d,t:$('#bt2').value,a,tot:calc()};
+setTimeout(()=>{W('bk',[x,...L('bk',[])]);$('#app').innerHTML=`<section class="w" style="text-align:center;max-width:520px"><div class="ic" style="display:grid;place-items:center">${I(1)}</div><h2>تم تأكيد حجزك</h2><div class="cd"><p>رقم الحجز: <b>${x.id}</b></p><p>${x.n}<br>${x.d} · ${x.t}<br>${x.a.replace(/</g,'')}</p><div class="pr">${x.tot} ر.س</div></div><p style="margin-top:16px">ستصلك رسالة تأكيد، وتتواصل معك الأخصائية قبل الموعد.</p><a class="b" href="#account">حجوزاتي</a></section>`;scrollTo(0,0)},1400)}
+V.gift=()=>`<section class="w"><h2>بطاقة إهداء</h2><p>أهدي جلسة استرخاء لمن تحبين، وتصلها البطاقة إلكترونياً.</p><div class="g2"><div class="cd"><label>المبلغ<select id="ga" onchange="gp()"><option>200</option><option>300</option><option selected>500</option><option>800</option></select></label><label>اسم المُهدى إليها<input id="gn" oninput="gp()"></label><label>اسمك<input id="gf" oninput="gp()"></label><label>رسالتك<textarea id="gm" rows="2" oninput="gp()"></textarea></label><button class="b" onclick="buyG()">اشتري البطاقة</button></div><div class="gc" id="gv"></div></div></section>`;
+function gp(){const g=id=>$(id).value.replace(/</g,'');$('#gv').innerHTML=`<b style="font-size:22px;font-weight:300;letter-spacing:.06em">calma</b><p>إلى ${g('#gn')||'من تحبين'}<br>${g('#gm')||'جلسة هدوء من القلب'}</p><div><b style="font-size:28px">${g('#ga')} ر.س</b><p style="font-size:13px">من ${g('#gf')||'صديقتك'}</p></div>`}
+function buyG(){if(!$('#gn').value.trim())return toast('اكتبي اسم المُهدى إليها');const c='GIFT-'+Math.floor(10000+Math.random()*90000);W('gf',[{c,a:$('#ga').value,n:$('#gn').value},...L('gf',[])]);toast('تم الشراء. كود الهدية: '+c)}
+V.about=()=>`<section class="w"><h2>من نحن</h2><p style="max-width:640px">بدأت Calma من فكرة بسيطة: الاسترخاء لا يجب أن يبدأ بالزحام والانتظار. نرسل إليك أخصائيات معتمدات يصلن إلى منزلك في الوقت المحدد، لتحصلي على عناية كاملة بخصوصية وراحة.</p><div class="gr"><div class="cd"><h3>رؤيتنا</h3><p>أن تصبح العناية الشخصية المنزلية عادة سهلة وآمنة لكل امرأة.</p></div><div class="cd"><h3>رسالتنا</h3><p>خدمة احترافية، وأدوات معقمة، وحجز بخطوات قليلة.</p></div><div class="cd"><h3>نموذج العمل</h3><p>تجارة إلكترونية من الشركة إلى المستهلك (B2C) مع حجز ودفع إلكتروني.</p></div></div></section>${V.home().match(/<section class="w" style="padding-top:0"><h2>التعقيم[\s\S]*?<\/section>/)[0].replace('padding-top:0','padding-top:0')}`;
+V.faq=()=>`<section class="w" style="max-width:760px"><h2>الأسئلة الشائعة</h2>${H([['كيف أعرف أن الأدوات معقمة؟','تعقم الأدوات بالأوتوكلاف، وتستخدم المستلزمات القابلة للرمي مرة واحدة، وتفتح الأخصائية العبوات أمامك.'],['هل يمكن تعديل الحجز أو إلغاؤه؟','نعم، قبل الموعد بـ 12 ساعة على الأقل من صفحة حجوزاتي دون رسوم.'],['ما طرق الدفع؟','مدى والبطاقات وApple Pay وSTC Pay، أو الدفع بعد الجلسة.'],['هل الأخصائيات موثوقات؟','تُراجع هوية كل أخصائية وشهاداتها، وتصلك بياناتها قبل الموعد.'],['كيف تحمون بياناتي وعنواني؟','نستخدم اتصالاً مشفراً، ولا نخزن بيانات البطاقات، ولا نشارك عنوانك إلا مع الأخصائية المكلفة.'],['كيف أستخدم بطاقة الإهداء؟','تدخل المُهدى إليها الكود عند الحجز، ويُخصم المبلغ من إجمالي الجلسة.']].map(x=>`<details><summary>${x[0]}</summary><p style="margin:8px 0 0">${x[1]}</p></details>`))}</section>`;
+V.contact=()=>`<section class="w"><h2>تواصل معنا</h2><div class="g2"><div class="cd"><label>الاسم<input id="cn"></label><label>البريد الإلكتروني<input id="ce" type="email"></label><label>رسالتك<textarea id="cm" rows="4"></textarea></label><button class="b" onclick="if(!$('#cn').value||!$('#cm').value)return toast('أكملي الاسم والرسالة');toast('وصلتنا رسالتك، سنرد قريباً');render()">إرسال</button></div><div class="cd"><h3>معلومات التواصل</h3><p>واتساب: 05xxxxxxxx<br>hello@calma.example<br>يومياً من 10 صباحاً إلى 10 مساءً<br>نخدم الأحياء الرئيسية في مدينتك</p></div></div></section>`;
+V.account=()=>!user?`<section class="w"><h2>حسابي</h2><p>سجلي دخولك لعرض حجوزاتك.</p><button class="b" onclick="acc()">تسجيل الدخول</button></section>`:`<section class="w"><h2>أهلاً ${user.n}</h2><h3>حجوزاتي</h3><div class="gr">${H(L('bk',[]).map(b=>`<div class="cd"><b>${b.id}</b><p>${b.n}<br>${b.d} · ${b.t}</p><div class="pr">${b.tot} ر.س</div></div>`))||'<p>لا توجد حجوزات بعد.</p>'}</div><h3 style="margin-top:24px">بطاقات الإهداء</h3><div class="gr">${H(L('gf',[]).map(g=>`<div class="cd"><b>${g.c}</b><p>${g.a} ر.س إلى ${g.n.replace(/</g,'')}</p></div>`))||'<p>لا توجد بطاقات.</p>'}</div><button class="b2" style="margin-top:20px" onclick="user=null;W('cu',null);hdr();go('home')">تسجيل الخروج</button></section>`;
+function render(){const r=location.hash.slice(1)||'home';$('#app').innerHTML=(V[r]||V.home)();if(r=='book')calc();if(r=='gift')gp();document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')=='#'+r));if(r!='services'){qs='';$('#q').value=''}scrollTo(0,0);const ap=$('#app');ap.style.animation='none';void ap.offsetWidth;ap.style.animation=''}
+addEventListener('hashchange',render);
+let mode=0;const au=$('#au');
+function hdr(){$('#ab').textContent=user?user.n:'دخول'}
+function acc(){if(user)return go('account');mode=0;sw(1);au.showModal()}
+function sw(k){if(!k)mode^=1;$('#at').textContent=mode?'إنشاء حساب':'تسجيل الدخول';$('#an').hidden=!mode;$('#sb').textContent=mode?'لدي حساب':'إنشاء حساب جديد'}
+function auth(){const e=$('#em').value.trim(),n=$('#nm').value.trim();if(!/\S+@\S+\.\S+/.test(e)||$('#pw').value.length<6)return toast('أدخلي بريداً صحيحاً وكلمة مرور من 6 أحرف');if(mode&&!n)return toast('اكتبي اسمك');user={n:n||e.split('@')[0],e};W('cu',user);au.close();hdr();toast('أهلاً '+user.n);if(location.hash=='#account')render()}
+const K=[[/تعب|إجهاد|ارهاق|إرهاق|توتر|ظهر|رقبة|شد/,'يبدو أن جسمك يحتاج راحة. أرشح لك «باقة الاسترخاء» (مساج + ترطيب)، أو «مساج علاجي» إن كان الألم في الظهر أو الرقبة.',10],[/جاف|ترطيب|بشرة|نضار|حب/,'للبشرة الجافة أنصحك بـ«ترطيب مكثف»، وللإشراقة السريعة «جلسة نضارة».',7],[/عروس|زواج|مناسبة|حفل|عيد|فرح/,'للمناسبات أرشح «باقة العروس»: تنظيف عميق ونضارة ومنيكير وبديكير بسعر مخفض.',11],[/هدية|اهداء|إهداء/,'يمكنك شراء بطاقة إهداء وإرسالها لمن تحبين إلكترونياً.','g'],[/سعر|كم|تكلف/,'تبدأ الأسعار من 120 ر.س للمنيكير، والباقات توفر لك حتى 20%.',0],[/تعقيم|نظاف|سلام/,'نعقم الأدوات بالأوتوكلاف ونستخدم مستلزمات لمرة واحدة، والأخصائيات موثقات.',0],[/دفع|مدى|ابل|apple|stc/,'ندعم مدى والبطاقات وApple Pay وSTC Pay، أو الدفع بعد الجلسة.',0]];
+function tg(){$('#ch').classList.toggle('on');if(!$('#ms').children.length)say('مرحباً بك في Calma. أخبريني ما تحتاجين: إجهاد، بشرة جافة، مناسبة قريبة، أو هدية؟',0)}
+function say(t,id,u){const m=document.createElement('div');m.className='m '+(u?'u':'a');m.textContent=t;if(id){const b=document.createElement('button');b.className='b sm';b.style.display='block';b.style.marginTop='6px';b.textContent=id=='g'?'اشتري بطاقة':'احجزي الآن';b.onclick=()=>{id=='g'?go('gift'):book(id);tg()};m.append(b)}$('#ms').append(m);$('#ms').scrollTop=1e5}
+function ask(t){say(t,0,1);const k=K.find(x=>x[0].test(t));setTimeout(()=>k?say(k[1],k[2]):say('لم أفهم تماماً. اكتبي إن كنتِ تعانين من إجهاد أو جفاف بشرة، أو لديك مناسبة قريبة.',0),400)}
+function send(){const i=$('#ci');if(i.value.trim())ask(i.value.trim());i.value='';return false}
+let f=0;setInterval(()=>{const e=$('#bc');if(e){f^=1;e.textContent=f?'زفير':'شهيق'}},4000);
+const TC={light:'#ffffff',pink:'#fff6f9',dark:'#1a2824'};
+function setT(t,sv0){document.documentElement.dataset.theme=t;$('#tc').content=TC[t];document.querySelectorAll('.th button').forEach(b=>b.classList.toggle('on',b.dataset.t==t));if(sv0!==0)W('th',t)}
+setT(L('th',null)||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'),0);
+hdr();render();
+</script></body></html>
